@@ -1,1 +1,135 @@
 /* Write your CSS Here. */
+body{
+    background-color: rgb(235, 235, 235);
+}
+.container{
+    height: 400px;
+    background-color: rgb(1, 1, 75);
+    margin: 50px 100px ;
+    border-radius: 5px;
+}
+.miniContainer{
+    /* display: flex; */
+    background-color: white; 
+    padding: 15px 15px 15px 15px;
+    margin: 15px 15px 
+
+}
+
+.child1{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.introPara1, .introPara2, .introPara3, .introPara4{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: x-large;
+    
+}
+
+#introblock {
+    display: flex;
+    flex-direction: column;
+   
+    /* min-height: 10vh; */
+}
+
+.introPara1, .introPara2, .introPara3{
+    color: rgb(48, 47, 47);
+}
+
+
+.textBlock {
+    /* min-height: 10vh;     */
+    width:60%;
+    padding: 10px;
+} 
+
+img {
+    /* justify-content: flex-end; */
+    width: 350px;
+    height: 350px;
+    margin: 20px 40px;
+}
+#category {
+    font-size: 20px;
+}
+h2, h3, p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+p{
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    padding-top: 35px;
+    padding-left: 20px ;
+    font-family: 'Style Script', cursive;
+    font-size: 50px;
+}
+
+#buttonStart, #buttonAnswer, #buttonNext, #restartButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    border-radius: 5px;
+}
+
+.finalScore{
+    font-size: x-large;
+    color: orangered;
+    align-content: center;
+    text-align: center;
+}
+
+.finalMessage{
+    font-size: xx-large;
+    color: rgb(103, 86, 177);
+    text-align: center;
+}
+
+#restartButton {
+    align-self:center;
+}
+
+#buttons {
+    display: flex;
+    justify-content:space-between;
+}
+/* #buttonNext {
+    justify-content:space-around;
+} */
+    
+#newScore {
+    color: red;
+    font-weight: bold;
+}
+
+#buttonStart{
+    background-color: #4CAF50; 
+    /* width: 40px; */
+    align-self: start;
+}
+
+#question {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    padding-top: 5px
+}
+#divQuestion {
+    background-color: lightblue;
+    padding: 15px 15px 15px 15px;
+    margin: auto;
+    border-radius: 5px ;
+}
+.countdown {
+
+    align-items: center;
+    color: rgb(128, 0, 0);
+}

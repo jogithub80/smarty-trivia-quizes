@@ -13,18 +13,80 @@
     <meta name="keywords" content="Kenzie" />
 
     <!-- Title Page-->
-    <title>Kenzie JavaScript Page</title>
+    <title>Kenzie Capstone Trivia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <!-- CSS-->
     <link href="style.css" rel="stylesheet" media="all" />
   </head>
 
   <body>
-    <h1>Open the Developer Tools to see the console output.</h1>
-    <h3>
-      Either right click and select "Inspect" or use the shortcut Option + ⌘ + J
-      (on macOS), or Shift + CTRL + J (on Windows/Linux).
-    </h3>
+      <div class="container">
+            <h1>Welcome to Capstone Trivia Quizes</h1>
+
+          <div class="miniContainer">
+              <div id="introblock" >
+                <div class="child1">
+                  <div class="textBlock">
+                      <p class="introPara1">Player, <br> You have been thinking that you are the smartest in the world. You have studied a lot, discovered a lot during your living years. Then, today is the day to prove yourself. In this game, you will face several questions in different categories chosen by the game generator. </p>
+                      <p class="introPara2" > Your score will increase by one point for every good answer and the game will end after the final answer of the chosen category, but don’t worry you can keep playing in another category.</p> 
+                      <p class="introPara3"> No matter what happened, you will always be a winner since you have the courage to start the game. Good luck !! 
+                      </p>
+                      <p class="introPara4" style="color: rgb(173, 4, 32)">Warning: Any wrong answer will bring your score back to zero.... Oups!!!
+                      </p>
+                  </div>
+                  <div class="pictureBlock">
+                    <img src="smart guy.png" alt="smartkid">
+                  </div>                  
+            </div>
+               <button id="buttonStart">Start Game</button>
+               
+            </div>
+              
+            
+            <h2 id='category'></h2>
+
+            <div id="divQuestion" style="display: none">
+
+              <p id='congrats'></p>
+                <h3 id='newScore'></h3>
+                
+                <h3 id="question"></h3>
+
+                <form id="myform" name= "myform">
+                      <div>
+                        <input type="text" id='answer' name= 'answer' placeholder="Type your answer">
+                      </div>
+                      <br>
+                      <div id="buttons">            
+                        <button id="buttonAnswer">Submit</button>
+                        <button id="buttonNext">Next Question</button>  
+                      </div>
+                </form>
+                <button id="restartButton" style="display: none;">Play Again</button>
+                <p class="countdown" style="display: none"></p>
+            </div>
+          </div>
+    </div>
+
+    
     <script src="code.js"></script>
   </body>
 </html>
