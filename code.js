@@ -21,6 +21,7 @@ let category = document.getElementById("category")
 let questionLine = document.getElementById ("question")
 let inputLine = document.getElementById ('answer')
 let pictureBlock = document.querySelector('.pictureBlock')
+let restartButton = document.getElementById('restartButton')
 
 let newScore = document.getElementById('newScore')
 let paraCongrat = document.getElementById('congrats')
@@ -34,7 +35,7 @@ finalScoreLine.classList.add("finalScore")
 let finalMessage = document.createElement('p')
 finalMessage.classList.add('finalMessage')
 
-let restartButton = document.getElementById('restartButton')
+
 
 
 
@@ -148,12 +149,13 @@ function answersControl(event) {
             paraCongrat.innerHTML = 'You answered: ' + '<b>' + userAnswer + "</b>" + "<br>" + ' That was Correct, Congrats !! You earned 1 point.'
             userScore +=1
             newScore.innerHTML = `Your Score: ${userScore}`
-                     
+            restartButton.style.display = "none"
         } else {
-            // paraCongrat.innerHTML = 'You answered: ' + userAnswer + "<br>" + 'Sorry! wrong answer. You lose your points.'
-            // userScore = 0
-            // newScore.innerHTML = `Your Score: ${userScore}`
-            endingGame(userScore)
+            paraCongrat.innerHTML = 'You answered: ' + userAnswer + "<br>" + 'Sorry! wrong answer. You lose your points.'
+            userScore = 0
+            newScore.innerHTML = `Your Score: ${userScore}`
+            restartButton.style.display = "block"
+            // endingGame(userScore)
         } 
         randomQuestion()
         inputLine.value = ""        
@@ -167,9 +169,9 @@ function endingGame(finalScore) {
     finalMessage.innerHTML = `The End of this Category.`
 
     restartButton.style.display = "block"
-    countdown.style.display = "block"
+    // countdown.style.display = "block"
 
-    divQuestion.replaceWith(finalScoreLine, finalMessage,restartButton, theCountdown)
+    divQuestion.replaceWith(finalScoreLine, finalMessage,restartButton)
 }
 function dataEmpty (){
     if (theReturnData.length === 0 ) {

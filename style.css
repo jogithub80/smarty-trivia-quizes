@@ -95,7 +95,8 @@ h1 {
 }
 
 #restartButton {
-    align-self:center;
+
+   align-items: center;
 }
 
 #buttons {
@@ -128,8 +129,8 @@ h1 {
     margin: auto;
     border-radius: 5px ;
 }
-.countdown {
+/* .countdown {
 
     align-items: center;
     color: rgb(128, 0, 0);
-}
+} */
